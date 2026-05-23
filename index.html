@@ -1,728 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wedding Invitation - Garik & Anna">
-    <title>Garik & Anna | Wedding Invitation</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --gold: #d4af37;
-            --gold-light: #f4e5c2;
-            --gold-dark: #aa8c2c;
-            --black: #1a1a1a;
-            --white: #ffffff;
-            --cream: #faf8f5;
-        }
 
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evelyn &amp; James Wedding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3f493f",
+                        "on-surface-variant": "#434749",
+                        "outline": "#747879",
+                        "surface-container-high": "#eae8e3",
+                        "tertiary-fixed": "#dae6d7",
+                        "surface-container": "#f0eee9",
+                        "on-primary-fixed-variant": "#41484a",
+                        "on-surface": "#1b1c19",
+                        "surface-container-low": "#f5f3ee",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#becabc",
+                        "on-background": "#1b1c19",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#162017",
+                        "secondary-fixed-dim": "#dac769",
+                        "outline-variant": "#c3c7c8",
+                        "primary-fixed": "#dde4e6",
+                        "on-primary-container": "#959c9f",
+                        "on-tertiary-container": "#939e91",
+                        "secondary-container": "#f7e382",
+                        "primary-fixed-dim": "#c1c8ca",
+                        "secondary-fixed": "#f7e382",
+                        "surface-tint": "#586062",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#524700",
+                        "on-secondary-container": "#73640e",
+                        "surface-variant": "#e4e2dd",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-container": "#2b352b",
+                        "inverse-primary": "#c1c8ca",
+                        "primary-container": "#2d3436",
+                        "on-secondary-fixed": "#211b00",
+                        "surface": "#fbf9f4",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-tertiary-fixed": "#141e15",
+                        "surface-dim": "#dbdad5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "background": "#fbf9f4",
+                        "secondary": "#6c5e06",
+                        "on-primary-fixed": "#161d1f",
+                        "primary": "#181f21",
+                        "inverse-on-surface": "#f2f1ec"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1120px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "margin-mobile": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+                    }
+                },
+            },
         }
-
-        html {
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
             scroll-behavior: smooth;
         }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: var(--black);
-            color: var(--white);
-            overflow-x: hidden;
-        }
-
-        /* Parallax Background Sections */
-        .parallax-section {
-            position: relative;
-            height: 100vh;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .parallax-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
-
-        .parallax-1 {
-            background-image: url('https://drive.google.com/uc?export=view&id=1dptSurkuuHZnk1UrK2mtPU4VG9YIKYZ1');
-        }
-
-        .parallax-2 {
-            background-image: url('https://drive.google.com/uc?export=view&id=1S7WJguoMcu0NQfSDRfMvbO4aRPn3nM7U');
-        }
-
-        .parallax-3 {
-            background-image: url('https://drive.google.com/uc?export=view&id=19k51ONe4fCvT98trCJlvRnwgJmvpvvHM');
-        }
-
-        /* Hero Section */
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            padding: 40px;
-            animation: fadeInUp 2s ease-out;
-        }
-
-        .hero-subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            font-size: 1.2rem;
-            letter-spacing: 8px;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-            color: var(--gold-light);
-            animation: fadeIn 3s ease-out;
-        }
-
-        .hero-names {
-            font-family: 'Great Vibes', cursive;
-            font-size: 6rem;
-            color: var(--white);
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-ampersand {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 4rem;
-            color: var(--gold);
-            display: block;
-            margin: 10px 0;
-            font-style: italic;
-        }
-
-        .hero-date {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            font-weight: 300;
-            letter-spacing: 4px;
-            margin-top: 30px;
-            color: var(--gold-light);
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2;
-            animation: bounce 2s infinite;
-        }
-
-        .scroll-indicator svg {
-            width: 40px;
-            height: 40px;
-            fill: var(--gold);
-        }
-
-        /* Content Sections */
-        .content-section {
-            background: var(--cream);
-            color: var(--black);
-            padding: 100px 40px;
-            text-align: center;
-            position: relative;
-        }
-
-        .section-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem;
-            font-weight: 300;
-            margin-bottom: 20px;
-            color: var(--black);
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 2px;
-            background: var(--gold);
-            margin: 15px auto 0;
-        }
-
-        .section-subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--gold-dark);
-            margin-bottom: 40px;
-        }
-
-        /* Story Section */
-        .story-text {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            line-height: 2;
-            color: #555;
-            font-weight: 300;
-        }
-
-        /* Details Grid */
-        .details-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            max-width: 1000px;
-            margin: 60px auto;
-        }
-
-        .detail-card {
-            background: var(--white);
-            padding: 50px 30px;
-            border: 1px solid var(--gold-light);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .detail-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
-        }
-
-        .detail-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .detail-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: var(--black);
-        }
-
-        .detail-text {
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: #666;
-        }
-
-        /* Countdown Section */
-        .countdown-section {
-            background: linear-gradient(135deg, var(--black) 0%, #2a2a2a 100%);
-            padding: 80px 40px;
-            text-align: center;
-        }
-
-        .countdown-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-            flex-wrap: wrap;
-        }
-
-        .countdown-box {
-            background: rgba(212, 175, 55, 0.1);
-            border: 2px solid var(--gold);
-            border-radius: 10px;
-            padding: 30px;
-            min-width: 120px;
-            backdrop-filter: blur(10px);
-        }
-
-        .countdown-number {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem;
-            font-weight: 600;
-            color: var(--gold);
-            display: block;
-            line-height: 1;
-        }
-
-        .countdown-label {
-            font-size: 0.85rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-top: 10px;
-            color: var(--gold-light);
-        }
-
-        /* RSVP Section */
-        .rsvp-section {
-            background: var(--white);
-            padding: 100px 40px;
-        }
-
-        .rsvp-form {
-            max-width: 600px;
-            margin: 40px auto;
-            text-align: left;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--black);
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
-            transition: all 0.3s;
-            background: var(--cream);
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
-        }
-
-        .submit-btn {
-            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
-            color: var(--white);
-            border: none;
-            padding: 18px 50px;
-            font-size: 1rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            cursor: pointer;
-            width: 100%;
-            transition: transform 0.3s, box-shadow 0.3s;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
-        }
-
-        /* Gallery Section */
-        .gallery-section {
-            padding: 80px 40px;
-            background: var(--black);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 40px auto;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            aspect-ratio: 1;
-            cursor: pointer;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(212, 175, 55, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .reveal {
             opacity: 0;
-            transition: opacity 0.3s;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
         }
-
-        .gallery-item:hover .gallery-overlay {
+        .reveal.active {
             opacity: 1;
+            transform: translateY(0);
         }
-
-        /* Footer */
-        .footer {
-            background: var(--black);
-            color: var(--gold-light);
-            text-align: center;
-            padding: 60px 40px;
-            font-family: 'Cormorant Garamond', serif;
-        }
-
-        .footer-names {
-            font-family: 'Great Vibes', cursive;
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: var(--gold);
-        }
-
-        .footer-text {
-            font-size: 1.1rem;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateX(-50%) translateY(0);
-            }
-            40% {
-                transform: translateX(-50%) translateY(-20px);
-            }
-            60% {
-                transform: translateX(-50%) translateY(-10px);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-names {
-                font-size: 3.5rem;
-            }
-            
-            .hero-ampersand {
-                font-size: 2.5rem;
-            }
-            
-            .section-title {
-                font-size: 2.2rem;
-            }
-            
-            .countdown-number {
-                font-size: 2.5rem;
-            }
-            
-            .parallax-section {
-                background-attachment: scroll;
-            }
-        }
-
-        /* Decorative Elements */
-        .flourish {
-            width: 100px;
-            height: 20px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath d='M0 10 Q 25 20, 50 10 T 100 10' fill='none' stroke='%23d4af37' stroke-width='1'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 30px auto;
-            opacity: 0.6;
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(251, 249, 244, 0), rgba(251, 249, 244, 1));
         }
     </style>
-</head>
-<body>
-
-    <!-- Hero Section with Background 1 -->
-    <section class="parallax-section parallax-1">
-        <div class="hero-content">
-            <p class="hero-subtitle">Together with their families</p>
-            <h1 class="hero-names">
-                Garik<br>
-                <span class="hero-ampersand">&</span><br>
-                Anna
-            </h1>
-            <p class="hero-date">October 12, 2026</p>
-        </div>
-        <div class="scroll-indicator">
-            <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-        </div>
-    </section>
-
-    <!-- Story Section -->
-    <section class="content-section">
-        <p class="section-subtitle">Our Love Story</p>
-        <h2 class="section-title">Two Hearts, One Journey</h2>
-        <div class="flourish"></div>
-        <p class="story-text">
-            Every love story is beautiful, but ours is our favorite. From the moment our paths crossed, 
-            we knew we had found something special. Garik and Anna's journey together has been filled 
-            with laughter, adventure, and endless love. Now, we invite you to celebrate as we begin 
-            our greatest adventure yet – forever.
-        </p>
-    </section>
-
-    <!-- Details Section with Background 2 -->
-    <section class="parallax-section parallax-2">
-        <div style="position: relative; z-index: 2; text-align: center; padding: 40px;">
-            <h2 class="section-title" style="color: white; font-size: 2.5rem;">The Celebration</h2>
-            <div class="flourish"></div>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding-top: 60px;">
-        <div class="details-grid">
-            <div class="detail-card">
-                <div class="detail-icon">💍</div>
-                <h3 class="detail-title">The Ceremony</h3>
-                <p class="detail-text">
-                    <strong>Saturday, October 12, 2026</strong><br>
-                    4:00 PM<br><br>
-                    The Grand Oak Estate<br>
-                    123 Blossom Lane<br>
-                    Riverside, California
-                </p>
-            </div>
-            
-            <div class="detail-card">
-                <div class="detail-icon">🥂</div>
-                <h3 class="detail-title">Reception & Dinner</h3>
-                <p class="detail-text">
-                    <strong>Cocktail Hour</strong><br>
-                    5:30 PM<br><br>
-                    <strong>Dinner & Dancing</strong><br>
-                    7:00 PM<br><br>
-                    The Grand Ballroom
-                </p>
-            </div>
-            
-            <div class="detail-card">
-                <div class="detail-icon">👔</div>
-                <h3 class="detail-title">Attire</h3>
-                <p class="detail-text">
-                    <strong>Formal Attire Requested</strong><br><br>
-                    Black Tie Optional<br><br>
-                    We can't wait to see you in your finest!
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Countdown Section -->
-    <section class="countdown-section">
-        <p class="section-subtitle" style="color: var(--gold-light);">Counting Down To</p>
-        <h2 class="section-title" style="color: white;">Our Big Day</h2>
-        <div class="countdown-container" id="countdown">
-            <div class="countdown-box">
-                <span class="countdown-number" id="days">00</span>
-                <div class="countdown-label">Days</div>
-            </div>
-            <div class="countdown-box">
-                <span class="countdown-number" id="hours">00</span>
-                <div class="countdown-label">Hours</div>
-            </div>
-            <div class="countdown-box">
-                <span class="countdown-number" id="minutes">00</span>
-                <div class="countdown-label">Minutes</div>
-            </div>
-            <div class="countdown-box">
-                <span class="countdown-number" id="seconds">00</span>
-                <div class="countdown-label">Seconds</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery-section">
-        <p class="section-subtitle" style="color: var(--gold);">Moments Together</p>
-        <h2 class="section-title" style="color: white;">Our Journey</h2>
-        <div class="flourish"></div>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://drive.google.com/uc?export=view&id=1dptSurkuuHZnk1UrK2mtPU4VG9YIKYZ1" alt="Garik and Anna">
-                <div class="gallery-overlay">
-                    <span style="color: white; font-family: 'Great Vibes'; font-size: 2rem;">Love</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://drive.google.com/uc?export=view&id=1S7WJguoMcu0NQfSDRfMvbO4aRPn3nM7U" alt="Together">
-                <div class="gallery-overlay">
-                    <span style="color: white; font-family: 'Great Vibes'; font-size: 2rem;">Forever</span>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://drive.google.com/uc?export=view&id=19k51ONe4fCvT98trCJlvRnwgJmvpvvHM" alt="Engagement">
-                <div class="gallery-overlay">
-                    <span style="color: white; font-family: 'Great Vibes'; font-size: 2rem;">Always</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RSVP Section -->
-    <section class="rsvp-section">
-        <p class="section-subtitle">Join Us</p>
-        <h2 class="section-title">RSVP</h2>
-        <div class="flourish"></div>
-        <p style="color: #666; margin-bottom: 30px;">Please respond by September 15, 2026</p>
-        
-        <form class="rsvp-form" id="rsvp-form">
-            <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Your full name">
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required placeholder="your@email.com">
-            </div>
-            
-            <div class="form-group">
-                <label for="attending">Will you attend? *</label>
-                <select id="attending" name="attending" required>
-                    <option value="" disabled selected>Select your response</option>
-                    <option value="yes">Joyfully Accept</option>
-                    <option value="no">Regretfully Decline</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="guests">Number of Guests</label>
-                <select id="guests" name="guests">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="dietary">Dietary Restrictions</label>
-                <textarea id="dietary" name="dietary" rows="3" placeholder="Any allergies or dietary requirements"></textarea>
-            </div>
-            
-            <button type="submit" class="submit-btn">Send RSVP</button>
-        </form>
-        
-        <div id="success-message" style="display: none; text-align: center; padding: 30px; background: #e8f5e9; border-radius: 10px; margin-top: 30px;">
-            <h3 style="color: #2e7d32; font-family: 'Cormorant Garamond'; font-size: 2rem; margin-bottom: 10px;">Thank You!</h3>
-            <p style="color: #555;">Your RSVP has been received. We can't wait to celebrate with you!</p>
-        </div>
-    </section>
-
-    <!-- Background 3 Parallax -->
-    <section class="parallax-section parallax-3" style="height: 60vh;">
-        <div style="position: relative; z-index: 2; text-align: center; padding: 40px;">
-            <h2 class="section-title" style="color: white; font-size: 2.5rem;">Can't Wait to See You</h2>
-            <div class="flourish"></div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-names">Garik & Anna</div>
-        <p class="footer-text">October 12, 2026</p>
-        <p class="footer-text" style="font-size: 0.9rem; margin-top: 20px;">With love, we invite you to share in our joy</p>
-        <p style="margin-top: 30px; font-size: 0.85rem; opacity: 0.7;">Questions? Contact us at wedding@garikandanna.com</p>
-    </footer>
-
-    <script>
-        // Countdown Timer
-        const weddingDate = new Date('2026-10-12T16:00:00').getTime();
-
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = weddingDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = String(days).padStart(2, '0');
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-
-            if (distance <= 0) {
-                document.getElementById('countdown').innerHTML = 
-                    '<p style="color: var(--gold); font-family: \'Great Vibes\'; font-size: 3rem;">Today is the day! 💍</p>';
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 border-b border-outline-variant bg-surface/90 backdrop-blur-md transition-all duration-300 ease-in-out">
+<div class="flex items-center justify-between px-margin-mobile md:px-margin-desktop h-14 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity">menu</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-primary tracking-widest uppercase">E &amp; J</h1>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-primary font-bold hover:opacity-70 transition-opacity" href="#home">HOME</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:opacity-70 transition-opacity" href="#story">STORY</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:opacity-70 transition-opacity" href="#details">DETAILS</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:opacity-70 transition-opacity" href="#rsvp">RSVP</a>
+</nav>
+<div class="w-6 md:hidden"></div> <!-- Spacer for mobile centering -->
+</div>
+</header>
+<main class="pt-14 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col items-center justify-center text-center px-margin-mobile" id="home">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img class="w-full h-full object-cover opacity-30 grayscale-[0.2]" data-alt="A cinematic, high-end photograph of a modern glass architectural structure nestled in a lush green landscape under soft, golden hour sunlight. The image features clean lines and large windows reflecting a serene blue sky. The aesthetic is sophisticated and minimalist, using a palette of natural greens, soft whites, and warm champagne tones to evoke a sense of understated luxury and timeless romance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEZcoJuYH1Ey7HfoEq8Wo0Kt_SEa2LFc1TBJZ15-VdPOXf8tO751NBDKvvyeDhc3a8KNRwVcElXtsofMr0S7ASuN90FxuLo5iQj_hBeGXervHykU3-vF8M0xbB60X_3aFbvpmS4PnoS_LSA8iVm9Z1C9K2I6_HUXHGzFNIKo4tRBAHA5cR4GdLoxhIBNA_kWGUKfVG00clCjzSPDPZk5ptY9PTWhj1e4O6D8boKbvD3b77cn0Wj9CvpLZ-5SoLFMFwdKTrOl0wuaLo"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto reveal active">
+<span class="font-label-caps text-label-caps text-secondary tracking-[0.3em] mb-6 block">YOU ARE INVITED TO THE WEDDING OF</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8">Evelyn &amp; James</h1>
+<div class="h-px w-24 bg-outline-variant mx-auto mb-8"></div>
+<p class="font-headline-sm text-headline-sm text-on-surface-variant mb-2">Saturday, June 14th, 2025</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic mb-12">The Glass House, New York</p>
+<a class="inline-block px-10 py-4 bg-primary text-on-primary font-label-caps text-label-caps hover:opacity-90 transition-all uppercase tracking-widest" href="#rsvp">Reserve Your Seat</a>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="story">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 reveal">
+<div class="aspect-[3/4] overflow-hidden border border-outline-variant p-4 bg-surface">
+<img class="w-full h-full object-cover grayscale" data-alt="A candid, editorial-style black and white photograph of a couple walking through a minimalist urban park. The lighting is soft and diffused, highlighting the elegant textures of their clothing. The composition is spacious with plenty of negative space, conveying a mood of intimate serenity and modern sophistication within an architectural city setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Cez-fcxDuJS1YMK-con6tg_jpwZJ6dCNtZx77RlC1MmxvV9oQRq-9pxmNQASqE-lEO3kYy4IflWlGyE-y9ZyEgaWQX062Mci83x96h8Wx_1Rg4elIW4H5pxPWXSyMMdah90w3CTe7idl9gA5CrRcJ6qrIRgBABazKYCMvU2aBBlP7N0GX3cnJ6j3npENt2cT9Zy8Ve48VQ-zMQJCNNfhMnOFtqJAYG6-zwqTQjU68S8Q90xQDpTWtyuczBJWUMcq8a8x-9gr10Jl"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 reveal">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 block">THE JOURNEY</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Our Story</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>It began with a chance encounter in a quiet gallery in Chelsea, where a shared appreciation for minimalist art turned into a conversation that lasted until the streetlights flickered on. From that first evening, we knew we had found a rare kind of understanding in one another.</p>
+<p>Over the years, we have built a life defined by quiet moments, shared ambitions, and a love for the simple elegance found in everyday things. Whether traveling through remote landscapes or enjoying a coffee in our neighborhood, every chapter has been better because it was written together.</p>
+<p>Now, we invite you to join us as we begin our most important chapter yet, surrounded by the family and friends who have supported us along the way.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Event Details Section (Bento Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="details">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Celebration</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Details for the day's festivities</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Ceremony -->
+<div class="p-10 border border-outline-variant bg-surface flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">celebration</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">CEREMONY</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">4:30 PM — 5:30 PM</p>
+<p class="font-body-md text-body-md text-on-surface-variant">The North Terrace</p>
+</div>
+<!-- Reception -->
+<div class="p-10 border border-outline-variant bg-surface flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">restaurant</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">RECEPTION</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">6:00 PM — 11:00 PM</p>
+<p class="font-body-md text-body-md text-on-surface-variant">The Grand Pavilion</p>
+</div>
+<!-- Dress Code -->
+<div class="p-10 border border-outline-variant bg-surface flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">apparel</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">DRESS CODE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Black Tie</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic mt-4 opacity-70">A formal evening affair</p>
+</div>
+</div>
+</div>
+</section>
+<!-- RSVP Form Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="rsvp">
+<div class="max-w-[640px] mx-auto bg-surface p-8 md:p-16 border border-outline-variant reveal">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">RSVP</h2>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Kindly respond by May 1st, 2025</p>
+</div>
+<form class="space-y-10" onsubmit="event.preventDefault(); alert('Thank you for your response!');">
+<div>
+<label class="font-label-caps text-label-caps text-primary block mb-3">YOUR FULL NAME</label>
+<input class="w-full border-b border-outline-variant bg-transparent py-2 focus:border-secondary focus:ring-0 outline-none transition-colors font-body-md placeholder:opacity-30" placeholder="e.g. Alexander Hamilton" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-primary block mb-6">WILL YOU BE ATTENDING?</label>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="flex-1 py-4 border border-primary font-label-caps text-label-caps bg-primary text-on-primary transition-all attendance-btn" onclick="selectAttendance(this)" type="button">JOYFULLY ACCEPT</button>
+<button class="flex-1 py-4 border border-outline text-on-surface-variant font-label-caps text-label-caps bg-transparent transition-all hover:border-primary attendance-btn" onclick="selectAttendance(this)" type="button">REGRETFULLY DECLINE</button>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-primary block mb-3">DIETARY REQUIREMENTS</label>
+<textarea class="w-full border border-outline-variant bg-transparent p-4 focus:border-secondary focus:ring-0 outline-none transition-colors font-body-md placeholder:opacity-30" placeholder="Please let us know of any allergies or requirements..." rows="3"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label-caps text-label-caps hover:opacity-90 transition-all uppercase tracking-widest" type="submit">Submit RSVP</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-surface/95 backdrop-blur-sm border-t border-outline-variant z-50">
+<a class="flex flex-col items-center justify-center text-primary border-t-2 border-primary pt-1 font-label-caps text-label-caps" href="#home">
+<span class="material-symbols-outlined mb-1">heart_plus</span>
+<span>HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 font-label-caps text-label-caps" href="#story">
+<span class="material-symbols-outlined mb-1">auto_stories</span>
+<span>STORY</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 font-label-caps text-label-caps" href="#details">
+<span class="material-symbols-outlined mb-1">event_available</span>
+<span>DETAILS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 font-label-caps text-label-caps" href="#rsvp">
+<span class="material-symbols-outlined mb-1">card_giftcard</span>
+<span>RSVP</span>
+</a>
+</nav>
+<footer class="py-12 text-center bg-surface border-t border-outline-variant mb-16 md:mb-0">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-4">E &amp; J</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-60">NEW YORK CITY — JUNE 2025</p>
+</footer>
+<script>
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
             }
         }
 
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+        window.addEventListener("scroll", reveal);
+        // Initial check
+        reveal();
 
-        // RSVP Form Handler
-        document.getElementById('rsvp-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData.entries());
-            
-            console.log('RSVP Data:', data);
-            
-            this.style.display = 'none';
-            document.getElementById('success-message').style.display = 'block';
-        });
+        // RSVP Selection Logic
+        function selectAttendance(btn) {
+            const btns = document.querySelectorAll('.attendance-btn');
+            btns.forEach(b => {
+                b.classList.remove('bg-primary', 'text-on-primary', 'border-primary');
+                b.classList.add('bg-transparent', 'text-on-surface-variant', 'border-outline');
+            });
+            btn.classList.remove('bg-transparent', 'text-on-surface-variant', 'border-outline');
+            btn.classList.add('bg-primary', 'text-on-primary', 'border-primary');
+        }
 
-        // Smooth scroll reveal animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -100px 0px"
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = "1";
-                    entry.target.style.transform = "translateY(0)";
+        // Active Nav Link Logic
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("nav a");
+            
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute("id");
                 }
             });
-        }, observerOptions);
 
-        // Observe all cards and sections
-        document.querySelectorAll('.detail-card, .gallery-item').forEach((el) => {
-            el.style.opacity = "0";
-            el.style.transform = "translateY(30px)";
-            el.style.transition = "all 0.8s ease-out";
-            observer.observe(el);
+            navLinks.forEach((a) => {
+                a.classList.remove("text-primary", "font-bold", "border-t-2", "border-primary", "pt-1");
+                a.classList.add("text-on-surface-variant", "opacity-60");
+                if (a.getAttribute("href") === `#${current}`) {
+                    a.classList.remove("text-on-surface-variant", "opacity-60");
+                    a.classList.add("text-primary", "font-bold");
+                    if (a.closest('.md\\:hidden')) {
+                         a.classList.add("border-t-2", "border-primary", "pt-1");
+                    }
+                }
+            });
         });
     </script>
-</body>
-</html>
+</body></html>
