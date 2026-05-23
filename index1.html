@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Garik &amp; Anna Wedding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3f493f",
+                        "on-surface-variant": "#434749",
+                        "outline": "#747879",
+                        "surface-container-high": "#eae8e3",
+                        "tertiary-fixed": "#dae6d7",
+                        "surface-container": "#f0eee9",
+                        "on-primary-fixed-variant": "#41484a",
+                        "on-surface": "#1b1c19",
+                        "surface-container-low": "#f5f3ee",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#becabc",
+                        "on-background": "#1b1c19",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#162017",
+                        "secondary-fixed-dim": "#dac769",
+                        "outline-variant": "#c3c7c8",
+                        "primary-fixed": "#dde4e6",
+                        "on-primary-container": "#959c9f",
+                        "on-tertiary-container": "#939e91",
+                        "secondary-container": "#f7e382",
+                        "primary-fixed-dim": "#c1c8ca",
+                        "secondary-fixed": "#f7e382",
+                        "surface-tint": "#586062",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#524700",
+                        "on-secondary-container": "#73640e",
+                        "surface-variant": "#e4e2dd",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-container": "#2b352b",
+                        "inverse-primary": "#c1c8ca",
+                        "primary-container": "#2d3436",
+                        "on-secondary-fixed": "#211b00",
+                        "surface": "#fbf9f4",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-tertiary-fixed": "#141e15",
+                        "surface-dim": "#dbdad5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "background": "#fbf9f4",
+                        "secondary": "#6c5e06",
+                        "on-primary-fixed": "#161d1f",
+                        "primary": "#181f21",
+                        "inverse-on-surface": "#f2f1ec"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1120px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "margin-mobile": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            scroll-behavior: smooth;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(251, 249, 244, 0), rgba(251, 249, 244, 1));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 border-b border-outline-variant bg-surface/90 backdrop-blur-md transition-all duration-300 ease-in-out">
+<div class="flex items-center justify-between px-margin-mobile md:px-margin-desktop h-14 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity">menu</span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-primary tracking-widest uppercase">G &amp; A</h1>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-primary font-bold hover:opacity-70 transition-opacity" href="#home">HOME</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:opacity-70 transition-opacity" href="#story">STORY</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:opacity-70 transition-opacity" href="#details">DETAILS</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:opacity-70 transition-opacity" href="#rsvp">RSVP</a>
+</nav>
+<div class="w-6 md:hidden"></div> <!-- Spacer for mobile centering -->
+</div>
+</header>
+<main class="pt-14 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col items-center justify-center text-center px-margin-mobile" id="home">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img class="w-full h-full object-cover opacity-30 grayscale-[0.2]" data-alt="A cinematic, high-end photograph of a modern glass architectural structure nestled in a lush green landscape under soft, golden hour sunlight. The image features clean lines and large windows reflecting a serene blue sky. The aesthetic is sophisticated and minimalist, using a palette of natural greens, soft whites, and warm champagne tones to evoke a sense of understated luxury and timeless romance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEZcoJuYH1Ey7HfoEq8Wo0Kt_SEa2LFc1TBJZ15-VdPOXf8tO751NBDKvvyeDhc3a8KNRwVcElXtsofMr0S7ASuN90FxuLo5iQj_hBeGXervHykU3-vF8M0xbB60X_3aFbvpmS4PnoS_LSA8iVm9Z1C9K2I6_HUXHGzFNIKo4tRBAHA5cR4GdLoxhIBNA_kWGUKfVG00clCjzSPDPZk5ptY9PTWhj1e4O6D8boKbvD3b77cn0Wj9CvpLZ-5SoLFMFwdKTrOl0wuaLo"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto reveal active">
+<span class="font-label-caps text-label-caps text-secondary tracking-[0.3em] mb-6 block">YOU ARE INVITED TO THE WEDDING OF</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8">Garik &amp; Anna</h1>
+<div class="h-px w-24 bg-outline-variant mx-auto mb-8"></div>
+<p class="font-headline-sm text-headline-sm text-on-surface-variant mb-2">Saturday, June 14th, 2025</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic mb-12">The Glass House, New York</p>
+<a class="inline-block px-10 py-4 bg-primary text-on-primary font-label-caps text-label-caps hover:opacity-90 transition-all uppercase tracking-widest" href="#rsvp">Reserve Your Seat</a>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="story">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 reveal">
+<div class="aspect-[3/4] overflow-hidden border border-outline-variant p-4 bg-surface">
+<img class="w-full h-full object-cover grayscale" data-alt="A candid, editorial-style black and white photograph of a couple walking through a minimalist urban park. The lighting is soft and diffused, highlighting the elegant textures of their clothing. The composition is spacious with plenty of negative space, conveying a mood of intimate serenity and modern sophistication within an architectural city setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Cez-fcxDuJS1YMK-con6tg_jpwZJ6dCNtZx77RlC1MmxvV9oQRq-9pxmNQASqE-lEO3kYy4IflWlGyE-y9ZyEgaWQX062Mci83x96h8Wx_1Rg4elIW4H5pxPWXSyMMdah90w3CTe7idl9gA5CrRcJ6qrIRgBABazKYCMvU2aBBlP7N0GX3cnJ6j3npENt2cT9Zy8Ve48VQ-zMQJCNNfhMnOFtqJAYG6-zwqTQjU68S8Q90xQDpTWtyuczBJWUMcq8a8x-9gr10Jl"/>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 reveal">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest mb-4 block">THE JOURNEY</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Our Story</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>It began with a chance encounter in a quiet gallery in Chelsea, where a shared appreciation for minimalist art turned into a conversation that lasted until the streetlights flickered on. From that first evening, we knew we had found a rare kind of understanding in one another.</p>
+<p>Over the years, we have built a life defined by quiet moments, shared ambitions, and a love for the simple elegance found in everyday things. Whether traveling through remote landscapes or enjoying a coffee in our neighborhood, every chapter has been better because it was written together.</p>
+<p>Now, we invite you to join us as we begin our most important chapter yet, surrounded by the family and friends who have supported us along the way.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Event Details Section (Bento Style) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="details">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Celebration</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Details for the day's festivities</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Ceremony -->
+<div class="p-10 border border-outline-variant bg-surface flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">celebration</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">CEREMONY</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">4:30 PM — 5:30 PM</p>
+<p class="font-body-md text-body-md text-on-surface-variant">The North Terrace</p>
+</div>
+<!-- Reception -->
+<div class="p-10 border border-outline-variant bg-surface flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">restaurant</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">RECEPTION</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">6:00 PM — 11:00 PM</p>
+<p class="font-body-md text-body-md text-on-surface-variant">The Grand Pavilion</p>
+</div>
+<!-- Dress Code -->
+<div class="p-10 border border-outline-variant bg-surface flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">apparel</span>
+<h3 class="font-label-caps text-label-caps text-primary mb-4">DRESS CODE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Black Tie</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic mt-4 opacity-70">A formal evening affair</p>
+</div>
+</div>
+</div>
+</section>
+<!-- RSVP Form Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="rsvp">
+<div class="max-w-[640px] mx-auto bg-surface p-8 md:p-16 border border-outline-variant reveal">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">RSVP</h2>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Kindly respond by May 1st, 2025</p>
+</div>
+<form class="space-y-10" onsubmit="event.preventDefault(); alert('Thank you for your response!');">
+<div>
+<label class="font-label-caps text-label-caps text-primary block mb-3">YOUR FULL NAME</label>
+<input class="w-full border-b border-outline-variant bg-transparent py-2 focus:border-secondary focus:ring-0 outline-none transition-colors font-body-md placeholder:opacity-30" placeholder="e.g. Alexander Hamilton" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-primary block mb-6">WILL YOU BE ATTENDING?</label>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="flex-1 py-4 border border-primary font-label-caps text-label-caps bg-primary text-on-primary transition-all attendance-btn" onclick="selectAttendance(this)" type="button">JOYFULLY ACCEPT</button>
+<button class="flex-1 py-4 border border-outline text-on-surface-variant font-label-caps text-label-caps bg-transparent transition-all hover:border-primary attendance-btn" onclick="selectAttendance(this)" type="button">REGRETFULLY DECLINE</button>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-primary block mb-3">DIETARY REQUIREMENTS</label>
+<textarea class="w-full border border-outline-variant bg-transparent p-4 focus:border-secondary focus:ring-0 outline-none transition-colors font-body-md placeholder:opacity-30" placeholder="Please let us know of any allergies or requirements..." rows="3"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label-caps text-label-caps hover:opacity-90 transition-all uppercase tracking-widest" type="submit">Submit RSVP</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-4 pt-2 bg-surface/95 backdrop-blur-sm border-t border-outline-variant z-50">
+<a class="flex flex-col items-center justify-center text-primary border-t-2 border-primary pt-1 font-label-caps text-label-caps" href="#home">
+<span class="material-symbols-outlined mb-1">heart_plus</span>
+<span>HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 font-label-caps text-label-caps" href="#story">
+<span class="material-symbols-outlined mb-1">auto_stories</span>
+<span>STORY</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 font-label-caps text-label-caps" href="#details">
+<span class="material-symbols-outlined mb-1">event_available</span>
+<span>DETAILS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 font-label-caps text-label-caps" href="#rsvp">
+<span class="material-symbols-outlined mb-1">card_giftcard</span>
+<span>RSVP</span>
+</a>
+</nav>
+<footer class="py-12 text-center bg-surface border-t border-outline-variant mb-16 md:mb-0">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-4">E &amp; J</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-60">NEW YORK CITY — JUNE 2025</p>
+</footer>
+<script>
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        // Initial check
+        reveal();
+
+        // RSVP Selection Logic
+        function selectAttendance(btn) {
+            const btns = document.querySelectorAll('.attendance-btn');
+            btns.forEach(b => {
+                b.classList.remove('bg-primary', 'text-on-primary', 'border-primary');
+                b.classList.add('bg-transparent', 'text-on-surface-variant', 'border-outline');
+            });
+            btn.classList.remove('bg-transparent', 'text-on-surface-variant', 'border-outline');
+            btn.classList.add('bg-primary', 'text-on-primary', 'border-primary');
+        }
+
+        // Active Nav Link Logic
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("nav a");
+            
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((a) => {
+                a.classList.remove("text-primary", "font-bold", "border-t-2", "border-primary", "pt-1");
+                a.classList.add("text-on-surface-variant", "opacity-60");
+                if (a.getAttribute("href") === `#${current}`) {
+                    a.classList.remove("text-on-surface-variant", "opacity-60");
+                    a.classList.add("text-primary", "font-bold");
+                    if (a.closest('.md\\:hidden')) {
+                         a.classList.add("border-t-2", "border-primary", "pt-1");
+                    }
+                }
+            });
+        });
+    </script>
+</body></html>
